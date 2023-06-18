@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zarządzanie</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">=</a></li>
+            </ul>
+        </nav>
+  </header>
+  <div class="container">
+    <form class="login-form">
+        <p class="jezyk">
+      <select onchange="changeLanguage(this.value);">
+        <option value="">PL</option>
+        <option value="english">ENG</option>
+      </select>
+    </p>
+      <h2>Login</h2>
+    </br></br>
+      <div class="form-group">
+        <label for="username">Poczta:</label>
+        <input type="text" id="username" name="username" placeholder="Wprowadź swoją pocztę" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Hasło:</label>
+        <input type="password" id="password" name="password" placeholder="Wpisz swoje hasło" required>
+      </div>
+      <p>
+        <label>
+          <input name = "pass" type = "radio"
+             value = "search engine"/>  Zapamiętaj mnie!</label>
+      </p>
+    </br>
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn btn-secondary">Zapomniałem hasło</button>
+      <button type="button" class="btn btn3">Rejestracja</button>
+    </form>
+  </div>
+  <script>
+    function changeLanguage(language) {
+      if (language) {
+        var page = language + ".html";
+        window.location.href = page;
+      }
+    }
+  </script>
+</body>
+</html>
