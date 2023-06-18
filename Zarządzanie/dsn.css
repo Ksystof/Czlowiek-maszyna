@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-bottom: 1px solid #2500ad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  border: 1px solid #0f0047;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+  background: #3500f6bc;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:first-child {
+  margin-left: auto;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #333;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    background: #484848;
+}
+  
+/* */
+
+body {
+    background-color: #f2f2f2;
+}
+
+.window {
+  background-color: #ffffff;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.window-container {
+  display: flex;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+  border: 1px solid black;
+  float: right;
+}
+
+.option {
+  background-color: #dddddd;
+  padding: 10px 20px;
+  margin-left: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2%;
+  font-weight:bolder;
+  font-size: 30px;
+}
+
+.left-window,
+.right-window {
+  width: 50%;
+  vertical-align: top;
+  border: 1px solid #000000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.right-window h1{
+  border-bottom: 1px solid #000000;
+}
+
+.left-window h1, .right-window h1 {
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.text-content {
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+}
+
+.scroll {
+  overflow-y: auto;
+}
+
+label[for="xxs"] {
+  text-align: center;
+}
+
+.buttons button {
+  margin-left: 5px;
+}
+
+/* Choose img*/
+
+#imageContainer {
+  display:inline;
+  align-items: center;
+  gap: 10px;
+}
+
+#chooseText {
+  margin: 0;
+}
+
+#chooseButton {
+  padding: 8px 12px;
+  border: 1px solid black;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#preview {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 20%;
+}
+
+/* */
+#title{
+  border: 1px solid black;
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+#title::placeholder {
+  /* Add your desired styling for the placeholder text */
+  font-style: italic;
+  border-radius: 1%;
+}
+
+#dsc{
+  border: 1px solid black;
+  font-family: cursive;
+  margin-bottom: 10px;
+}
+
+#dsc::placeholder {
+  /* Add your desired styling for the placeholder text */
+  font-style: italic;
+  border-radius: 1%;
+  text-align: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Ilosc i cena*/
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row > * {
+  margin-bottom: 0;
+}
+
+.left-column,
+.right-column {
+  flex-basis: 45%; /* Adjust the width as needed */
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-row input {
+  font-style: italic;
+  border-radius: 1%;
+  border: 1px solid black;
+  width: 120px;
+}
+
+/* zmiana stanu towaru*/
+
+.form-row {
+  display: flex;
+}
+
+.column {
+  flex-grow: 1;
+  border: 1px solid blue;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-label {
+  text-align: center;
+}
+
+.button {
+  padding: 5px 10px;
+}
+
